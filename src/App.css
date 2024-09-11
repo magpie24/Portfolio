@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  
   text-align: center;
 }
 
@@ -18,7 +18,7 @@
 
 /* Image styling */
 .main-image {
-  width: 50%;
+  width: 55%;
   margin-right: 100px;
 }
 
@@ -71,3 +71,279 @@
   }
 }
 
+/* New Section: Lemon and Pomelo */
+.lemon-pomelo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 2rem; /* Adds some spacing between the sections */
+}
+
+/* Side Image Styling */
+.side-image {
+  position: absolute;
+  height: 80vh; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+
+/* Center Content Styling */
+.center-content {
+  text-align: center;
+}
+
+.center-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.center-paragraph {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mobile and smaller screen styling */
+@media (max-width: 768px) {
+  .lemon-pomelo-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-image, .right-image {
+    display: none; /* Hide the side images on smaller screens */
+  }
+
+  .center-heading {
+    font-size: 2rem;
+  }
+
+  .center-paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for side images */
+.side-image {
+  position: absolute;
+  height: 80vh; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Center vertically */
+  transition: transform 1s ease; /* Smooth transition */
+}
+
+/* Start position (centered) */
+.side-image.initial {
+  transform: translateY(-50%) translateX(0);
+}
+
+/* End position (sides) */
+.side-image.move-left {
+  transform: translateY(-50%) translateX(-100%);
+}
+
+.side-image.move-right {
+  transform: translateY(-50%) translateX(100%);
+}
+
+/* Center Content Styling */
+.center-content {
+  text-align: center;
+}
+
+.center-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.center-paragraph {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mobile and smaller screen styling */
+@media (max-width: 768px) {
+  .lemon-pomelo-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .side-image {
+    height: 60vh; /* Adjust height as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+  }
+
+  .left-image {
+    left: -50%; /* Start partially off-screen */
+  }
+
+  .right-image {
+    right: -50%; /* Start partially off-screen */
+  }
+
+  .side-image.mobile-move-left {
+    transform: translateY(-50%) translateX(-150%);
+    opacity: 0; /* Hide the image */
+  }
+
+  .side-image.mobile-move-right {
+    transform: translateY(-50%) translateX(150%);
+    opacity: 0; /* Hide the image */
+  }
+
+  .center-heading {
+    font-size: 2rem;
+  }
+
+  .center-paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* 4 Lemons Section */
+.image-heading-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 2rem;
+}
+
+.image-heading-container {
+  display: flex;
+  align-items: center;
+  width: 100%; /* Full width of the container */
+  max-width: 800px; /* Max width to center-align content */
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+
+/* Adjust positioning for images 2 and 4 */
+.image-heading-container:nth-child(2) {
+  transform: translateX(20%); /* Move image 2 slightly more to the center */
+}
+
+.image-heading-container:nth-child(4) {
+  transform: translateX(20%); /* Move image 4 slightly more to the center */
+}
+
+/* Centered headings */
+.section-heading {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Mobile and smaller screen styling */
+@media (max-width: 768px) {
+  .image-heading-section {
+    padding: 1rem;
+  }
+
+  .image-heading-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: none; /* Remove max-width constraint on small screens */
+  }
+
+  .section-image {
+    width: 100px; /* Adjust size as needed for mobile */
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* New Combined Section Styling */
+.combined-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-top: 6rem ;
+  position: relative; /* For absolute positioning of alsome image */
+}
+
+/* Image Heading Section Styling */
+.image-heading-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image Heading Container Styling */
+.image-heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.section-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 1rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Alsome Image Styling */
+.alsome-image {
+  width: 35%; /* Adjust size as needed */
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Mobile and smaller screen styling */
+@media (max-width: 768px) {
+  .combined-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .image-heading-section {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 1rem;
+  }
+
+}
+
+/* Adjusted for alignment with text content */
+.text-content-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+
+.section-heading {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: left;
+}
+
+.section-paragraph {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.5;
+  color: #555; /* Optional: Adjust text color as needed */
+  text-align: left;
+}
