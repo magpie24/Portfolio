@@ -140,6 +140,42 @@ function App() {
         </div>
         <img src={alsomeImage} alt="Alsome" className="alsome-image" />
       </div>
+
+    {/* COntent */}
+
+    <div className="main-section">
+      <h1 className="main-heading">Welcome to My Portfolio</h1>
+      <p className="main-paragraph">
+        I am a web developer and content creator passionate about making the web more creative.
+      </p>
+
+      <div className="circle-container">
+        <div className="circle-item">
+          <div className="circle"></div>
+          <h2>Heading 1</h2>
+        </div>
+        <div className="circle-item">
+          <div className="circle"></div>
+          <h2>Heading 2</h2>
+        </div>
+        <div className="circle-item">
+          <div className="circle"></div>
+          <h2>Heading 3</h2>
+        </div>
+        <div className="circle-item">
+          <div className="circle"></div>
+          <h2>Heading 4</h2>
+        </div>
+        <div className="circle-item">
+          <div className="circle"></div>
+          <h2>Heading 5</h2>
+        </div>
+      </div>
+    </div>
+
+    
+
+
     </>
   );
 }
