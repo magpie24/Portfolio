@@ -19,7 +19,7 @@
 /* Image styling */
 .main-image {
   width: 55%;
-  margin-right: 100px;
+  margin-right: 8%;
 }
 
 /* Text content */
@@ -31,14 +31,12 @@
 }
 
 /* Heading styling */
-.main-heading {
-  font-size: 6rem;
-  margin: 0;
-}
+
 
 .sub-heading {
   font-size: 1.5rem;
-  margin-top: 100px;
+  margin-top: 10%;
+  font-weight: 100;
 }
 
 /* Mobile and smaller screen styling */
@@ -356,9 +354,22 @@
   margin-top: 100px;
 }
 
-.main-heading {
-  font-size: 3rem;
+.main-heading1 {
+  font-size: 9rem;
   margin-bottom: 1rem;
+  line-height: 1;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .main-paragraph {

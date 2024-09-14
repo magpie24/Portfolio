@@ -1,4 +1,5 @@
 import React from 'react';
+import TikTokSection from './components/TikTokSection';
 import './App.css';
 import lemonImage from '/img/lemon.png';
 import pomeloImage from '/img/pomelo.png';
@@ -77,8 +78,11 @@ function App() {
       <div className="container">
         <img src={imageSrc} alt="Me on the lemon" className="main-image" />
         <div className="text-content">
-          <h1 className="main-heading">Feliz Pietras</h1>
-          <h2 className="sub-heading">This is your H2</h2>
+          <h1 className="main-heading1">FELIZ PIETRAS</h1>
+          <h2 className="sub-heading">Content Creator <br></br>
+            Web Developer <br></br>
+            Based in Aarhus
+          </h2>
         </div>
       </div>
 
@@ -173,11 +177,14 @@ function App() {
       </div>
     </div>
 
-    
+    <TikTokSection />
+
 
 
     </>
   );
 }
+
+
 
 export default App;
