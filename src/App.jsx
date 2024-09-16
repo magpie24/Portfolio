@@ -93,6 +93,10 @@ function App() {
           <h2 className="center-heading">Welcome to My Portfolio</h2>
           <p className="center-paragraph">
             I am a web developer and content creator passionate about making the web more creative.
+            I am a web developer and content creator passionate about making the web more creative.
+            I am a web developer and content creator passionate about making the web more creative.
+            I am a web developer and content creator passionate about making the web more creative.
+            I am a web developer and content creator passionate about making the web more creative.
           </p>
         </div>
         <img ref={pomeloRef} src={pomeloImage} alt="Pomelo" className="side-image initial right-image" />

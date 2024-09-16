@@ -40,6 +40,7 @@
 }
 
 /* Mobile and smaller screen styling */
+/* Mobile and smaller screen styling */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -50,25 +51,26 @@
   }
 
   .main-image {
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    height: auto; /* Upewnia się, że obraz zachowuje proporcje */
     margin-right: 0;
     overflow: hidden;
   }
 
   .main-heading1 {
-    font-size: 12rem;
-    margin-top: -40px; /* To slightly overlap the image */
+    font-size: 3rem; /* Zmniejszony rozmiar dla mniejszych ekranów */
+    margin-top: 10px; /* Dostosowanie marginesu, aby wyglądało ładnie */
     position: relative;
-    z-index: 1; /* To make sure it's on top of the image */
+    z-index: 1; /* Element pozostaje na wierzchu */
     text-align: center;
   }
 
   .sub-heading {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1rem; /* Zmniejszony rozmiar dla podtytułu */
+    margin-top: 5px; /* Zmniejszony margines dla lepszego wyglądu */
   }
 }
+
 
 /* New Section: Lemon and Pomelo */
 .lemon-pomelo-section {
@@ -107,25 +109,6 @@
 }
 
 /* Mobile and smaller screen styling */
-@media (max-width: 768px) {
-  .lemon-pomelo-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .left-image, .right-image {
-    display: none; /* Hide the side images on smaller screens */
-  }
-
-  .center-heading {
-    font-size: 2rem;
-  }
-
-  .center-paragraph {
-    font-size: 1rem;
-  }
-}
 
 /* Animation for side images */
 .side-image {
@@ -158,6 +141,9 @@
 .center-heading {
   font-size: 3rem;
   margin-bottom: 1rem;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .center-paragraph {
@@ -170,41 +156,39 @@
 @media (max-width: 768px) {
   .lemon-pomelo-section {
     position: relative;
-    height: 100vh; /* Full viewport height */
+    padding-top: 45%;
+    padding-bottom: 45%;
     overflow: hidden; /* Prevent horizontal scrolling */
+    height: 100%;
   }
 
   .side-image {
     height: 60vh; /* Adjust height as needed */
-    top: 50%;
     transform: translateY(-50%);
     transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
   }
 
-  .left-image {
-    left: -50%; /* Start partially off-screen */
-  }
-
-  .right-image {
-    right: -50%; /* Start partially off-screen */
-  }
 
   .side-image.mobile-move-left {
     transform: translateY(-50%) translateX(-150%);
-    opacity: 0; /* Hide the image */
+    
   }
 
   .side-image.mobile-move-right {
     transform: translateY(-50%) translateX(150%);
-    opacity: 0; /* Hide the image */
+    
   }
 
   .center-heading {
     font-size: 2rem;
+    display: block;
+    width: 60vw;
   }
 
   .center-paragraph {
     font-size: 1rem;
+    display: block;
+    width: 60vw;
   }
 }
 
@@ -377,6 +361,37 @@
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto 2rem;
+}
+
+
+/* Mobile and smaller screen styling */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-image {
+    width: 100vw;
+    height: auto; /* Upewnia się, że obraz zachowuje proporcje */
+    margin-right: 0;
+    overflow: hidden;
+    margin-top: -200px;
+  }
+
+  .main-heading1 {
+    font-size: 3rem; /* Zmniejszony rozmiar dla mniejszych ekranów */ /* Dostosowanie marginesu, aby wyglądało ładnie */
+    position: relative;
+    text-align: left;
+  }
+
+  .sub-heading {
+    font-size: 1rem; /* Zmniejszony rozmiar dla podtytułu */
+    margin-top: 5px; /* Zmniejszony margines dla lepszego wyglądu */
+  }
 }
 
 /* Circle Container Styling */
