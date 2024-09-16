@@ -16,6 +16,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
@@ -24,5 +25,10 @@ body {
 
 h1 {
   font-size: 4em;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
