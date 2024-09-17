@@ -3,11 +3,13 @@ import TikTokSection from './components/TikTokSection';
 import './App.css';
 import lemonImage from '/img/lemon.png';
 import pomeloImage from '/img/pomelo.png';
-import img1 from '/img/1.png';  // Replace with actual paths
+import img1 from '/img/1.png';  
 import img2 from '/img/2.png';
 import img3 from '/img/3.png';
 import img4 from '/img/4.png';
-import alsomeImage from '/img/alsome.png';  // Path to the new image
+import alsomeImage from '/img/alsome.png';
+import sitImage from '/img/sit.png';
+
 
 function App() {
   const [imageSrc, setImageSrc] = React.useState('img/meonlemon.png');
@@ -183,6 +185,19 @@ function App() {
 
     <TikTokSection />
 
+     {/* New Section: Block of Text - Image - Block of Text */}
+     <section className="text-image-section">
+        <h1 className="center-title">My New Section</h1>
+        <div className="text-image-container">
+          <div className="text-block">
+            <p>This is the first block of text. It could describe a project, some experience, or anything you'd like to highlight.</p>
+          </div>
+          <img src={sitImage} alt="A descriptive image" className="image-block" />
+          <div className="text-block">
+            <p>This is the second block of text. Here you can provide more information or details about the topic presented in the first block.</p>
+          </div>
+        </div>
+      </section>
 
 
     </>
