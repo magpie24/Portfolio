@@ -9,6 +9,11 @@ import img3 from '/img/3.png';
 import img4 from '/img/4.png';
 import alsomeImage from '/img/alsome.png';
 import sitImage from '/img/sit.png';
+import ProjectCard from './components/ProjectCard';
+import onedayatatimeImage from '/img/onedayatatime.png';
+import moveyourbodyImage from '/img/moveyourbody.png';
+import quotiaImage from '/img/quotia.png';
+import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
 
 
 function App() {
@@ -198,6 +203,47 @@ function App() {
           </div>
         </div>
       </section>
+
+  
+    <section className="projects-section">
+      <h1 className="projects-title">My Web Development Projects</h1>
+      <div className="project-cards">
+        <ProjectCard
+          imageSrc={onedayatatimeImage}
+          title="One Day at a Time"
+          description="A mindfulness project designed to inspire users with daily quotes and ideas for self-care."
+          techList={['React', 'Node.js', 'MongoDB']}
+          liveLink="https://onedayatatime.magdalenapietras.dk/"
+        />
+        <ProjectCard
+          imageSrc={moveyourbodyImage}
+          title="Move Your Body"
+          description="A fitness app created to help users stay motivated and track their daily workout progress."
+          techList={['HTML', 'CSS', 'JavaScript']}
+          liveLink="https://move-your-body-in-koszalin.magdalenapietras.dk/index.html?fbclid=IwAR0ZZqjF8nqANCfRXO7L0d2Hqtb6q9oQLkQgDdmNxCHfNhXs_egRBRZtxF4"
+        />
+        <ProjectCard
+          imageSrc={quotiaImage}
+          title="Quotia App"
+          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
+          techList={['React', 'Figma', 'Adobe XD']}
+          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+        />
+
+    <p>and the website you are on rn is also created by me ☻</p>
+
+      </div>
+    </section>
+ 
+
+
+
+
+
+
+
+
+
 
 
     </>

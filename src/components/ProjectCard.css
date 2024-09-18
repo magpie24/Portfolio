@@ -1,0 +1,93 @@
+/* ProjectCard.css */
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 2rem);
+    text-align: left;
+    transition: transform 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-image {
+    filter: grayscale(0);
+    transform: scale(1.05);
+  }
+  
+  .project-details {
+    padding: 1.5rem;
+  }
+  
+  .project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-tech-list li {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .project-link {
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1024px) {
+    .project-card {
+      width: calc(50% - 2rem); /* 2 cards per row */
+    }
+  
+    .projects-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Responsivity: 1 card per row for small screens (mobile devices) */
+  @media (max-width: 768px) {
+    .project-card {
+      width: 100%; /* 1 card per row */
+    }
+  
+    .projects-title {
+      font-size: 2rem;
+    }
+  
+    .project-details {
+      padding: 1rem;
+    }
+  }
