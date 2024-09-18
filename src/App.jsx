@@ -14,6 +14,7 @@ import onedayatatimeImage from '/img/onedayatatime.png';
 import moveyourbodyImage from '/img/moveyourbody.png';
 import quotiaImage from '/img/quotia.png';
 import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
+import Sidebar from './components/SideBar';
 
 
 function App() {
@@ -94,6 +95,7 @@ function App() {
       </div>
 
       {/* Lemon and Pomelo Section - UNCHANGED */}
+      <div id="section1" className="section"></div>
       <div className="lemon-pomelo-section">
         <img ref={lemonRef} src={lemonImage} alt="Lemon" className="side-image initial left-image" />
         <div className="center-content">
@@ -158,6 +160,7 @@ function App() {
 
     {/* COntent */}
 
+    <div id="section2" className="section"></div>
     <div className="main-section">
       <h1 className="main-heading">Welcome to My Portfolio</h1>
       <p className="main-paragraph">
@@ -191,6 +194,7 @@ function App() {
     <TikTokSection />
 
      {/* New Section: Block of Text - Image - Block of Text */}
+     <div id="section3" className="section"></div>
      <section className="text-image-section">
         <h1 className="center-title">My New Section</h1>
         <div className="text-image-container">
@@ -235,7 +239,10 @@ function App() {
       </div>
     </section>
  
-
+    
+      <Sidebar />
+      
+      
 
 
 

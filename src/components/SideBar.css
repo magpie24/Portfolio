@@ -1,0 +1,81 @@
+/* Sidebar.css */
+
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 70px; /* Small width initially */
+    transition: width 0.3s ease;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    background-color: transparent;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(208, 208, 208);
+    border-width: 1px;
+    overflow: hidden;
+    color: black;
+  }
+  
+  /* Expanded sidebar on hover */
+  .sidebar.hovered {
+    width: 160px; /* Expand width on hover */
+  }
+  
+  /* Individual sidebar items */
+  .sidebar-item {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+  
+  /* Highlight active section */
+  .sidebar-item.active .sidebar-title {
+    font-weight: bold;
+    color: #f9a825;
+  }
+  
+  /* Image styling */
+  .sidebar-image {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    transition: filter 0.3s ease;
+  }
+  
+  /* Text hidden initially */
+  .sidebar-title {
+    font-size: 1rem;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Text hidden */
+    transform: translateX(-20px); /* Slide out of view */
+  }
+  
+  /* Show text on hover */
+  .sidebar.hovered .sidebar-title {
+    opacity: 1; /* Text visible */
+    transform: translateX(0); /* Slide into view */
+  }
+  
+  /* Active hook - bold text when scrolling over a section */
+  .sidebar-item.active .sidebar-title {
+    font-weight: bold;
+  }
+  
+  /* Hover effect for each item */
+  .sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+  }
+  
