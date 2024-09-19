@@ -27,14 +27,14 @@
   .tiktok-embed {
     width: 100%;
     height: 100%;
-    border: none; /* Remove iframe border */
+    border: none; 
   }
   
   .see-more-btn {
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    background-color:rgba(254, 44, 85, 1);
+    background-color: rgb(233, 147, 9);
     color: white;
     border: none;
     border-radius: 5px;
