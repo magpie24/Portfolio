@@ -6,14 +6,14 @@
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    width: 70px; /* Small width initially */
+    width: 60px; /* Small width initially */
     transition: width 0.3s ease;
     z-index: 9999;
     display: flex;
     flex-direction: column;
     align-items: flex-end; /* Align items to the right */
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     border-style: solid;
     border-color: rgb(208, 208, 208);
     border-width: 1px;

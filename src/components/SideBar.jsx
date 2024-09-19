@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './Sidebar.css'; // Importing CSS
 
 const sections = [
-    { id: 'section1', title: 'Section 1', imageSrc: '/img/1.png' },
-    { id: 'section2', title: 'Section 2', imageSrc: '/img/2.png' },
-    { id: 'section3', title: 'Section 3', imageSrc: '/img/3.png' },
-    { id: 'section4', title: 'Section 4', imageSrc: '/img/4.png' },
+    { id: 'section1', title: 'About Me', imageSrc: '/img/1.png' },
+    { id: 'section2', title: 'Content', imageSrc: '/img/2.png' },
+    { id: 'section3', title: 'Web', imageSrc: '/img/3.png' },
+    { id: 'section4', title: 'Contact', imageSrc: '/img/4.png' },
   ];
   
   const Sidebar = () => {

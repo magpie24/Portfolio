@@ -151,7 +151,7 @@
 
 .center-paragraph {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
@@ -254,13 +254,20 @@
     font-size: 1.2rem;
   }
 
-  .section-paragraph{
-    padding-right: 10px;
-  }
 
   .alsome-image{
     display: none;
   }
+
+  .image-heading-container:nth-child(2) {
+    transform: translateX(0%); /* Move image 2 slightly more to the center */
+  }
+  
+  .image-heading-container:nth-child(4) {
+    transform: translateX(0%); /* Move image 4 slightly more to the center */
+  }
+
+
 }
 
 /* New Combined Section Styling */
@@ -300,12 +307,15 @@
 
 /* Alsome Image Styling */
 .alsome-image {
-  width: 35%; /* Adjust size as needed */
+  width: 30%;
   height: auto;
   position: absolute;
   right: 0;
+  padding-right: 5%;
   top: 50%;
   transform: translateY(-50%);
+  filter: grayscale(100%);
+  
 }
 
 /* Mobile and smaller screen styling */

@@ -13,6 +13,7 @@ import ProjectCard from './components/ProjectCard';
 import onedayatatimeImage from '/img/onedayatatime.png';
 import moveyourbodyImage from '/img/moveyourbody.png';
 import quotiaImage from '/img/quotia.png';
+import boardgames from '/img/boardgames.png';
 import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
 import Sidebar from './components/SideBar';
 
@@ -121,36 +122,38 @@ function App() {
           <div className="image-heading-container">
             <img src={img1} alt="Image 1" className="section-image" />
             <div className="text-content-container">
-              <h2 className="section-heading">Heading 1</h2>
+              <h2 className="section-heading">Independent</h2>
               <p className="section-paragraph">
-                I am creative, nice, pretty, confident, obsessed, resilient, reliable, responsible, nice, lovely, I am a good human.
+                From idea to production, I organize my work effectively to reach goals. <br></br>
+                I am self-driven and focus on making the highest quality solution. Always.
               </p>
             </div>
           </div>
           <div className="image-heading-container">
             <img src={img2} alt="Image 2" className="section-image" />
             <div className="text-content-container">
-              <h2 className="section-heading">Heading 2</h2>
+              <h2 className="section-heading">Fast-thinking & Flexible</h2>
               <p className="section-paragraph">
-                I am creative, nice, pretty, confident, obsessed, resilient, reliable, responsible, nice, lovely, I am a good human.
+              Changes are inevitable, so instead of resisting them, I focus on how to leverage them to benefit my work. In the fast-paced digital world, I stay up to date with trends and the latest tech innovations. 
               </p>
             </div>
           </div>
           <div className="image-heading-container">
             <img src={img3} alt="Image 3" className="section-image" />
             <div className="text-content-container">
-              <h2 className="section-heading">Heading 3</h2>
+              <h2 className="section-heading">Open-minded</h2>
               <p className="section-paragraph">
-                I am creative, nice, pretty, confident, obsessed, resilient, reliable, responsible, nice, lovely, I am a good human.
+                I love to unlearn, learn and relearn. For me it is a powerful tool to stay open-minden and soak in the knwoledge
+                and new perspectives, rather than staying with the safe formulas that don't bring benefits. 
               </p>
             </div>
           </div>
           <div className="image-heading-container">
             <img src={img4} alt="Image 4" className="section-image" />
             <div className="text-content-container">
-              <h2 className="section-heading">Heading 4</h2>
+              <h2 className="section-heading">Reliable</h2>
               <p className="section-paragraph">
-                I am creative, nice, pretty, confident, obsessed, resilient, reliable, responsible, nice, lovely, I am a good human.
+                You can count on me and I will count on you. 
               </p>
             </div>
           </div>
@@ -162,9 +165,10 @@ function App() {
 
     <div id="section2" className="section"></div>
     <div className="main-section">
-      <h1 className="main-heading">Welcome to My Portfolio</h1>
+      <h1 className="main-heading">Content Creation</h1>
       <p className="main-paragraph">
-        I am a web developer and content creator passionate about making the web more creative.
+        I am passionate about showcasing brands values and brand-image through content creation. 
+        I always take each case personally and make a tailored content that streghents  
       </p>
 
       <div className="circle-container">
@@ -196,7 +200,7 @@ function App() {
      {/* New Section: Block of Text - Image - Block of Text */}
      <div id="section3" className="section"></div>
      <section className="text-image-section">
-        <h1 className="center-title">My New Section</h1>
+        <h1 className="center-title">Web Development</h1>
         <div className="text-image-container">
           <div className="text-block">
             <p>This is the first block of text. It could describe a project, some experience, or anything you'd like to highlight.</p>
@@ -216,25 +220,47 @@ function App() {
           imageSrc={onedayatatimeImage}
           title="One Day at a Time"
           description="A mindfulness project designed to inspire users with daily quotes and ideas for self-care."
-          techList={['React', 'Node.js', 'MongoDB']}
+          techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://onedayatatime.magdalenapietras.dk/"
         />
         <ProjectCard
           imageSrc={moveyourbodyImage}
           title="Move Your Body"
           description="A fitness app created to help users stay motivated and track their daily workout progress."
-          techList={['HTML', 'CSS', 'JavaScript']}
+          techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://move-your-body-in-koszalin.magdalenapietras.dk/index.html?fbclid=IwAR0ZZqjF8nqANCfRXO7L0d2Hqtb6q9oQLkQgDdmNxCHfNhXs_egRBRZtxF4"
         />
+        <ProjectCard
+          imageSrc={boardgames}
+          title="Board Games Search"
+          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
+          techList={['React', 'GitHub']}
+          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+        />
+
         <ProjectCard
           imageSrc={quotiaImage}
           title="Quotia App"
           description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
-          techList={['React', 'Figma', 'Adobe XD']}
+          techList={['Figma']}
           liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
         />
 
-    <p>and the website you are on rn is also created by me ☻</p>
+        <ProjectCard
+          imageSrc={quotiaImage}
+          title="Quotia App"
+          description="Yes, this is this website :D But just so you know- I also coded this."
+          techList={['Figma']}
+          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+        />
+
+<ProjectCard
+          imageSrc={quotiaImage}
+          title="Quotia App"
+          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
+          techList={['Figma']}
+          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+        />
 
       </div>
     </section>
