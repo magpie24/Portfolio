@@ -1,9 +1,7 @@
-// ProjectCard.js
-
 import React from 'react';
-import './ProjectCard.css'; // Add CSS styles here or in the main CSS file
+import './ProjectCard.css'; 
 
-const ProjectCard = ({ imageSrc, title, description, techList, liveLink }) => {
+const ProjectCard = ({ imageSrc, title, description, techList, liveLink, githubLink }) => {
   return (
     <div className="project-card">
       <a href={liveLink} target="_blank" rel="noopener noreferrer">
@@ -17,9 +15,17 @@ const ProjectCard = ({ imageSrc, title, description, techList, liveLink }) => {
             <li key={index}>{tech}</li>
           ))}
         </ul>
-        <a href={liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
-          View Live
-        </a>
+        <div className="project-links">
+          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="project-link">
+            View Live
+          </a>
+          <br></br>
+          {githubLink && (
+            <a href={githubLink} target="_blank" rel="noopener noreferrer" className="project-link github-link">
+              GitHub Repository
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );

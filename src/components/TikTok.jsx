@@ -1,4 +1,4 @@
-// src/components/TikTok.jsx
+
 import React from 'react';
 import './TikTokList.css';
 

@@ -7,7 +7,6 @@
   overflow-x: hidden;
 }
 
-/* App.css */
 
 /* General Container Styling */
 .container {
@@ -33,15 +32,13 @@
 }
 
 /* Heading styling */
-
-
 .sub-heading {
   font-size: 1.5rem;
   margin-top: 10%;
   font-weight: 100;
 }
 
-/* Mobile and smaller screen styling */
+
 /* Mobile and smaller screen styling */
 @media (max-width: 768px) {
   .container {
@@ -54,22 +51,22 @@
 
   .main-image {
     width: 100%;
-    height: auto; /* Upewnia się, że obraz zachowuje proporcje */
+    height: auto;
     margin-right: 0;
     overflow: hidden;
   }
 
   .main-heading1 {
-    font-size: 3rem; /* Zmniejszony rozmiar dla mniejszych ekranów */
-    margin-top: 10px; /* Dostosowanie marginesu, aby wyglądało ładnie */
+    font-size: 3rem;
+    margin-top: 10px;
     position: relative;
-    z-index: 1; /* Element pozostaje na wierzchu */
+    z-index: 1;
     text-align: center;
   }
 
   .sub-heading {
-    font-size: 1rem; /* Zmniejszony rozmiar dla podtytułu */
-    margin-top: 5px; /* Zmniejszony margines dla lepszego wyglądu */
+    font-size: 1rem;
+    margin-top: 5px; 
   }
 }
 
@@ -82,15 +79,15 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  padding-top: 2rem; /* Adds some spacing between the sections */
+  padding-top: 2rem;
 }
 
 /* Side Image Styling */
 .side-image {
   position: absolute;
-  height: 80vh; /* Adjust as needed */
+  height: 80vh; 
   top: 50%;
-  transform: translateY(-50%); /* Center vertically */
+  transform: translateY(-50%); 
 }
 
 
@@ -110,15 +107,13 @@
   margin: 0 auto;
 }
 
-/* Mobile and smaller screen styling */
-
 /* Animation for side images */
 .side-image {
   position: absolute;
-  height: 80vh; /* Adjust as needed */
+  height: 80vh; 
   top: 50%;
-  transform: translateY(-50%); /* Center vertically */
-  transition: transform 1s ease; /* Smooth transition */
+  transform: translateY(-50%); 
+  transition: transform 1s ease; 
 }
 
 /* Start position (centered) */
@@ -134,7 +129,6 @@
 .side-image.move-right {
   transform: translateY(-50%) translateX(100%);
 }
-
 
 /* Center Content Styling */
 .center-content {
@@ -534,6 +528,7 @@
 /* Projects Section Styling */
 .projects-section {
   padding: 4rem 2rem;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -600,7 +595,7 @@
 
 .project-link {
   font-size: 1rem;
-  color: #007BFF;
+  color: rgba(254, 44, 85, 1);
   text-decoration: none;
 }
 
@@ -629,4 +624,118 @@
   }
 }
 
+/* Contact Section container */
+.contact-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
+
+/* Left block styling */
+.contact-left {
+  flex: 1;
+  text-align: left;
+  margin-left: 20%;
+
+}
+
+.contact-left h1 {
+    font-size: 5rem;
+  margin-bottom: 2rem;
+  font-family: "the-seasons", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  font-size: 4rem;
+  color: #333;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #ddd;
+}
+
+/* Right block styling (image) */
+.contact-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.footer2 img{
+  display: none;
+}
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left h1{
+    font-size: 3rem;
+  }
+
+  .contact-left {
+    text-align: center;
+    margin-left: 0;
+  }
+  
+
+  .contact-right{
+    margin-left: 30%;
+  }
+  .social-icons {
+    justify-content: center;
+
+
+  }
+
+  .icon{
+    font-size: 2rem;
+  }
+
+  .contact-right {
+    margin-top: 1.5rem;
+  }
+
+  .footer img{
+    display: none;
+  }
+
+  .footer2 img{
+    width: 100vw;
+    display: block;
+    margin-top: -200px;
+  }
+}
+
+.footer img{
+  width: 100vw;
+  z-index: 10000;
+  margin-top: -300px;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Sidebar.css'; // Importing CSS
+import './Sidebar.css'; 
 
 const sections = [
     { id: 'section1', title: 'About Me', imageSrc: '/img/1.png' },

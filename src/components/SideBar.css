@@ -1,17 +1,15 @@
-/* Sidebar.css */
-
 /* Sidebar container */
 .sidebar {
     position: fixed;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    width: 60px; /* Small width initially */
+    width: 60px; 
     transition: width 0.3s ease;
     z-index: 9999;
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
+    align-items: flex-end;
     background-color: transparent;
     border-radius: 20px;
     border-style: solid;
@@ -23,13 +21,13 @@
   
   /* Expanded sidebar on hover */
   .sidebar.hovered {
-    width: 160px; /* Expand width on hover */
+    width: 160px; 
   }
   
   /* Individual sidebar items */
   .sidebar-item {
     display: flex;
-    justify-content: space-between; /* Space between text and image */
+    justify-content: space-between; 
     align-items: center;
     padding: 10px;
     cursor: pointer;
@@ -58,19 +56,14 @@
     overflow: hidden;
     text-overflow: ellipsis;
     transition: opacity 0.3s ease;
-    opacity: 0; /* Text hidden */
-    transform: translateX(-20px); /* Slide out of view */
+    opacity: 0; 
+    transform: translateX(-20px); 
   }
   
   /* Show text on hover */
   .sidebar.hovered .sidebar-title {
-    opacity: 1; /* Text visible */
-    transform: translateX(0); /* Slide into view */
-  }
-  
-  /* Active hook - bold text when scrolling over a section */
-  .sidebar-item.active .sidebar-title {
-    font-weight: bold;
+    opacity: 1; 
+    transform: translateX(0); 
   }
   
   /* Hover effect for each item */

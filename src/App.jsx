@@ -12,10 +12,13 @@ import sitImage from '/img/sit.png';
 import ProjectCard from './components/ProjectCard';
 import onedayatatimeImage from '/img/onedayatatime.png';
 import moveyourbodyImage from '/img/moveyourbody.png';
+import felizpietras from '/img/felizpietras.png';
 import quotiaImage from '/img/quotia.png';
+import petparadise from '/img/petparadise.png';
 import boardgames from '/img/boardgames.png';
 import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
 import Sidebar from './components/SideBar';
+import { FaLinkedin, FaTiktok, FaInstagram } from 'react-icons/fa';
 
 
 function App() {
@@ -222,42 +225,45 @@ function App() {
           description="A mindfulness project designed to inspire users with daily quotes and ideas for self-care."
           techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://onedayatatime.magdalenapietras.dk/"
+          githubLink="https://github.com/magpie24/One-Day-at-a-Time--"
         />
         <ProjectCard
           imageSrc={moveyourbodyImage}
-          title="Move Your Body"
-          description="A fitness app created to help users stay motivated and track their daily workout progress."
+          title="Move Your Body in Koszalin"
+          description=""
           techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://move-your-body-in-koszalin.magdalenapietras.dk/index.html?fbclid=IwAR0ZZqjF8nqANCfRXO7L0d2Hqtb6q9oQLkQgDdmNxCHfNhXs_egRBRZtxF4"
+          githubLink="https://github.com/magpie24/Koszalin"
         />
         <ProjectCard
           imageSrc={boardgames}
           title="Board Games Search"
-          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
+          description="Board Games Search solution for board games cafe in Aarhus."
           techList={['React', 'GitHub']}
           liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+          githubLink="https://github.com/magpie24/BoardGames"
         />
 
         <ProjectCard
-          imageSrc={quotiaImage}
-          title="Quotia App"
-          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
-          techList={['Figma']}
-          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+          imageSrc={petparadise}
+          title="PetParadise Shop"
+          description="WooCommerce shop with products for pets. Group project."
+          techList={['WooCommerce', 'WordPress', 'Figma']}
+          liveLink="https://petparadise.magdalenapietras.dk/"
         />
 
         <ProjectCard
-          imageSrc={quotiaImage}
-          title="Quotia App"
-          description="Yes, this is this website :D But just so you know- I also coded this."
-          techList={['Figma']}
+          imageSrc={felizpietras}
+          title="Portfolio Website"
+          description="Yes, this is this website :D But just so you know - I also coded this."
+          techList={['React', 'CSS', 'HTML', 'GitHub']}
           liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
         />
 
 <ProjectCard
           imageSrc={quotiaImage}
           title="Quotia App"
-          description="A quote-based app that delivers daily inspirational quotes with beautiful UI/UX design."
+          description="A quote-based app that delivers daily inspirational quotes."
           techList={['Figma']}
           liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
         />
@@ -265,12 +271,43 @@ function App() {
       </div>
     </section>
  
-    
+      
+      {/* Contact Section */}
+      <div id="section4" className="section"></div>
+      <div className="contact-section">
+        <div className="contact-left">
+          <h1>Contact</h1>
+          <br></br>
+          <p>magda.pietras.con@gmail.com</p>
+          <br></br>
+          <p>Check me out:</p>
+          <div className="social-icons">
+            <a href="https://www.linkedin.com/in/magdalena-pietra%C5%9B-7a6389237/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="icon" />
+            </a>
+            <a href="https://www.tiktok.com/@feliznailz_" target="_blank" rel="noopener noreferrer">
+              <FaTiktok className="icon" />
+            </a>
+            <a href="https://www.instagram.com/feliznailz_?igsh=Zmk2OXQwaXRvZzBo&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="icon" />
+            </a>
+          </div>
+        </div>
+        <div className="contact-right">
+          <img src="/img/usmiech.png" alt="Magdalena Pietras" />
+        </div>
+      </div>
+
+
+    <div className="footer">
+      <img src="/img/footer.png"></img>
+    </div>
+
+    <div className="footer2">
+      <img src="/img/footermobile.png"></img>
+    </div>
+
       <Sidebar />
-      
-      
-
-
 
 
 

@@ -1,4 +1,4 @@
-// src/components/TikTokList.jsx
+
 import React, { useState } from 'react';
 import TikTok from './TikTok';
 import './TikTokList.css';

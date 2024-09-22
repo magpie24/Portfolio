@@ -1,4 +1,4 @@
-// src/components/TikTokSection.jsx
+
 import React from 'react';
 import TikTokList from './TikTokList';
 import './TikTokList.css';
