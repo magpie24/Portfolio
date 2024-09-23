@@ -16,6 +16,9 @@ import felizpietras from '/img/felizpietras.png';
 import quotiaImage from '/img/quotia.png';
 import petparadise from '/img/petparadise.png';
 import boardgames from '/img/boardgames.png';
+import footer from '/img/footer.png';
+import footermobile from '/img/footermobile.png';
+import usmiech from '/img/usmiech.png';
 import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
 import Sidebar from './components/SideBar';
 import { FaLinkedin, FaTiktok, FaInstagram } from 'react-icons/fa';
@@ -294,17 +297,17 @@ function App() {
           </div>
         </div>
         <div className="contact-right">
-          <img src="/img/usmiech.png" alt="Magdalena Pietras" />
+          <img src={usmiech} alt="Magdalena Pietras" />
         </div>
       </div>
 
 
     <div className="footer">
-      <img src="/img/footer.png"></img>
+      <img src={footer}></img>
     </div>
 
     <div className="footer2">
-      <img src="/img/footermobile.png"></img>
+      <img src={footermobile}></img>
     </div>
 
       <Sidebar />
