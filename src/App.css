@@ -103,8 +103,9 @@
 
 .center-paragraph {
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
+  color: #555555;
 }
 
 /* Animation for side images */
@@ -145,7 +146,7 @@
 
 .center-paragraph {
   font-size: 1.2rem;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -185,7 +186,7 @@
   .center-paragraph {
     font-size: 1rem;
     display: block;
-    width: 60vw;
+    width: 55vw;
   }
 }
 

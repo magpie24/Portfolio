@@ -1,6 +1,8 @@
 import React from 'react';
 import TikTokSection from './components/TikTokSection';
 import './App.css';
+
+// Importing Images, Components, Icons
 import lemonImage from '/img/lemon.png';
 import pomeloImage from '/img/pomelo.png';
 import img1 from '/img/1.png';  
@@ -19,11 +21,11 @@ import boardgames from '/img/boardgames.png';
 import footer from '/img/footer.png';
 import footermobile from '/img/footermobile.png';
 import usmiech from '/img/usmiech.png';
-import './components/ProjectCard.css'; // Add CSS styles here or in the main CSS fi
+import './components/ProjectCard.css';
 import Sidebar from './components/SideBar';
 import { FaLinkedin, FaTiktok, FaInstagram } from 'react-icons/fa';
 
-
+// Landing Page
 function App() {
   const [imageSrc, setImageSrc] = React.useState('img/meonlemon.png');
   const lemonRef = React.useRef(null);
@@ -89,7 +91,7 @@ function App() {
 
   return (
     <>
-      {/* Existing Section - UNCHANGED */}
+      {/* Keywords */}
       <div className="container">
         <img src={imageSrc} alt="Me on the lemon" className="main-image" />
         <div className="text-content">
@@ -101,26 +103,26 @@ function App() {
         </div>
       </div>
 
-      {/* Lemon and Pomelo Section - UNCHANGED */}
+      {/* Lemon and Pomelo Section - Introduction */}
       <div id="section1" className="section"></div>
       <div className="lemon-pomelo-section">
         <img ref={lemonRef} src={lemonImage} alt="Lemon" className="side-image initial left-image" />
         <div className="center-content">
           <h2 className="center-heading">Welcome to My Portfolio</h2>
           <p className="center-paragraph">
-            I am a web developer and content creator passionate about making the web more creative.
-            I am a web developer and content creator passionate about making the web more creative.
-            I am a web developer and content creator passionate about making the web more creative.
-            I am a web developer and content creator passionate about making the web more creative.
-            I am a web developer and content creator passionate about making the web more creative.
+          Hi, I’m Magdalena—though in the digital world, you’ll know me as Feliz (Spanish for happy).
+           By digital world, I especially mean TikTok and Instagram, where I create content for my 
+           social media profiles @feliznailz_. My passion is creating trendy short videos! I absolutely
+            love it! Aside from that, I design and code websites. With my extensive knowledge of social
+             media and strong skills in web design and development, I know how to create a powerful brand
+              image for companies and effectively manage their online presence.
+              Sounds interesting?<br></br>
+              Here is more about my work values!
           </p>
         </div>
         <img ref={pomeloRef} src={pomeloImage} alt="Pomelo" className="side-image initial right-image" />
       </div>
 
-      {/* New Section - Images and Headings with Alsome Image */}
-      
-      
       
        {/* New Section - Image Heading Section and Alsome Image */}
        <div className="combined-section">
@@ -173,10 +175,11 @@ function App() {
     <div className="main-section">
       <h1 className="main-heading">Content Creation</h1>
       <p className="main-paragraph">
-        I am passionate about showcasing brands values and brand-image through content creation. 
-        I always take each case personally and make a tailored content that streghents  
+      I am passionate about showcasing brands' values and brand image through content creation.
+       I think content creation is a very powerful tool, and I love using all of its assets.
       </p>
 
+    
       <div className="circle-container">
         <div className="circle-item">
           <div className="circle"></div>
@@ -200,6 +203,7 @@ function App() {
         </div>
       </div>
     </div>
+  
 
     <TikTokSection />
 
@@ -209,11 +213,21 @@ function App() {
         <h1 className="center-title">Web Development</h1>
         <div className="text-image-container">
           <div className="text-block">
-            <p>This is the first block of text. It could describe a project, some experience, or anything you'd like to highlight.</p>
+            <p>I design and code functional and intuitive websites. And ... I love commenting my code. <br></br><br></br>
+              Technologies I work with: <br></br>
+              • HTML <br></br>
+              • CSS <br></br>
+              • JavaScript <br></br>
+              • React <br></br>
+              • GitHub <br></br>
+            </p>
           </div>
           <img src={sitImage} alt="A descriptive image" className="image-block" />
           <div className="text-block">
-            <p>This is the second block of text. Here you can provide more information or details about the topic presented in the first block.</p>
+            <p>I also love and work well in CMS. Let me list some:<br></br>
+            • WordPress + WooCommerce <br></br>
+            • Wix Studio <br></br>
+            • Joomla</p>
           </div>
         </div>
       </section>
