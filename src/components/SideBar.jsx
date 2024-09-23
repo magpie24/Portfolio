@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Sidebar.css'; 
 
 const sections = [
-    { id: 'section1', title: 'About Me', imageSrc: '/img/1.png' },
-    { id: 'section2', title: 'Content', imageSrc: '/img/2.png' },
-    { id: 'section3', title: 'Web', imageSrc: '/img/3.png' },
-    { id: 'section4', title: 'Contact', imageSrc: '/img/4.png' },
-  ];
+  { id: 'section1', title: 'About Me', imageSrc: `${import.meta.env.BASE_URL}img/1.png` },
+  { id: 'section2', title: 'Content', imageSrc: `${import.meta.env.BASE_URL}img/2.png` },
+  { id: 'section3', title: 'Web', imageSrc: `${import.meta.env.BASE_URL}img/3.png` },
+  { id: 'section4', title: 'Contact', imageSrc: `${import.meta.env.BASE_URL}img/4.png` },
+];
   
   const Sidebar = () => {
     const [activeSection, setActiveSection] = useState(null);
