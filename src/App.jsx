@@ -180,7 +180,7 @@ function App() {
       </p>
 
     
-      <div className="circle-container">
+      {/* <div className="circle-container">
         <div className="circle-item">
           <div className="circle"></div>
           <h2>Heading 1</h2>
@@ -201,7 +201,7 @@ function App() {
           <div className="circle"></div>
           <h2>Heading 5</h2>
         </div>
-      </div>
+      </div> */}
     </div>
   
 

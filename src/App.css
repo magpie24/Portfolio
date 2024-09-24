@@ -168,12 +168,12 @@
 
 
   .side-image.mobile-move-left {
-    transform: translateY(-50%) translateX(-75%);
+      transform: translateY(-50%) translateX(-78%);
     
   }
 
   .side-image.mobile-move-right {
-    transform: translateY(-50%) translateX(75%);
+    transform: translateY(-50%) translateX(78%);
     
   }
 
