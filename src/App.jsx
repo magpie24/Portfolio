@@ -124,11 +124,11 @@ function App() {
       </div>
 
       
-       {/* New Section - Image Heading Section and Alsome Image */}
+       {/* My Values - Image Heading Section and Alsome Image */}
        <div className="combined-section">
         <div className="image-heading-section">
           <div className="image-heading-container">
-            <img src={img1} alt="Image 1" className="section-image" />
+            <img src={img1} alt="Quarter of Lemon" className="section-image" />
             <div className="text-content-container">
               <h2 className="section-heading">Independent</h2>
               <p className="section-paragraph">
@@ -138,7 +138,7 @@ function App() {
             </div>
           </div>
           <div className="image-heading-container">
-            <img src={img2} alt="Image 2" className="section-image" />
+            <img src={img2} alt="Quarter of Lemon" className="section-image" />
             <div className="text-content-container">
               <h2 className="section-heading">Fast-thinking & Flexible</h2>
               <p className="section-paragraph">
@@ -147,7 +147,7 @@ function App() {
             </div>
           </div>
           <div className="image-heading-container">
-            <img src={img3} alt="Image 3" className="section-image" />
+            <img src={img3} alt="Half of lemon" className="section-image" />
             <div className="text-content-container">
               <h2 className="section-heading">Open-minded</h2>
               <p className="section-paragraph">
@@ -157,7 +157,7 @@ function App() {
             </div>
           </div>
           <div className="image-heading-container">
-            <img src={img4} alt="Image 4" className="section-image" />
+            <img src={img4} alt="A full lemon" className="section-image" />
             <div className="text-content-container">
               <h2 className="section-heading">Reliable</h2>
               <p className="section-paragraph">
@@ -166,7 +166,7 @@ function App() {
             </div>
           </div>
         </div>
-        <img src={alsomeImage} alt="Alsome" className="alsome-image" />
+        <img src={alsomeImage} alt="Magdalena Pietras" className="alsome-image" />
       </div>
 
     {/* COntent */}
@@ -179,7 +179,8 @@ function App() {
        I think content creation is a very powerful tool, and I love using all of its assets.
       </p>
 
-    
+      {/* This section is under construction */}
+
       {/* <div className="circle-container">
         <div className="circle-item">
           <div className="circle"></div>
@@ -222,7 +223,7 @@ function App() {
               • GitHub <br></br>
             </p>
           </div>
-          <img src={sitImage} alt="A descriptive image" className="image-block" />
+          <img src={sitImage} alt="Magdalena Pietras" className="image-block" />
           <div className="text-block">
             <p>I also love and work well in CMS. Let me list some:<br></br>
             • WordPress + WooCommerce <br></br>
@@ -232,7 +233,7 @@ function App() {
         </div>
       </section>
 
-  
+        {/* My Projects */}
     <section className="projects-section">
       <h1 className="projects-title">My Web Development Projects</h1>
       <div className="project-cards">
@@ -257,7 +258,7 @@ function App() {
           title="Board Games Search"
           description="Board Games Search solution for board games cafe in Aarhus."
           techList={['React', 'GitHub']}
-          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+          liveLink="https://magpie24.github.io/BoardGames/"
           githubLink="https://github.com/magpie24/BoardGames"
         />
 
@@ -274,7 +275,8 @@ function App() {
           title="Portfolio Website"
           description="Yes, this is this website :D But just so you know - I also coded this."
           techList={['React', 'CSS', 'HTML', 'GitHub']}
-          liveLink="https://www.behance.net/gallery/162669067/Quotia-App-With-Quotes"
+          liveLink="https://magpie24.github.io/Portfolio/"
+          githubLink="https://github.com/magpie24/Portfolio"
         />
 
 <ProjectCard
@@ -315,6 +317,7 @@ function App() {
         </div>
       </div>
 
+      {/* Footer */}
 
     <div className="footer">
       <img src={footer}></img>
@@ -323,6 +326,8 @@ function App() {
     <div className="footer2">
       <img src={footermobile}></img>
     </div>
+
+    {/* Sidebar - Side Floating Navigation Bar */}
 
       <Sidebar />
 

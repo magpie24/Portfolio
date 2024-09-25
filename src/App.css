@@ -161,9 +161,9 @@
   }
 
   .side-image {
-    height: 60vh; /* Adjust height as needed */
+    height: 60vh; 
     transform: translateY(-50%);
-    transition: transform 1s ease, opacity 1s ease; /* Smooth transition */
+    transition: transform 1s ease, opacity 1s ease; 
   }
 
 
@@ -201,8 +201,8 @@
 .image-heading-container {
   display: flex;
   align-items: center;
-  width: 100%; /* Full width of the container */
-  max-width: 800px; /* Max width to center-align content */
+  width: 100%; 
+  max-width: 800px; 
   margin-bottom: 2rem;
   position: relative;
 }
@@ -236,11 +236,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: none; /* Remove max-width constraint on small screens */
+    max-width: none; 
   }
 
   .section-image {
-    width: 10px; /* Adjust size as needed for mobile */
+    width: 10px; 
     margin-right: 0;
     margin-bottom: 0.5rem;
   }
@@ -272,7 +272,7 @@
   justify-content: space-between;
   padding: 2rem;
   padding-top: 6rem ;
-  position: relative; /* For absolute positioning of alsome image */
+  position: relative; 
 }
 
 /* Image Heading Section Styling */
@@ -290,7 +290,7 @@
 }
 
 .section-image {
-  width: 100px; /* Adjust size as needed */
+  width: 100px;
   height: auto;
   margin-right: 1rem;
 }
@@ -323,7 +323,7 @@
   }
 
   .image-heading-section {
-    width: 100%; /* Full width on small screens */
+    width: 100%; 
     margin-bottom: 1rem;
   }
 
@@ -347,11 +347,10 @@
   font-size: 1rem;
   margin: 0;
   line-height: 1.5;
-  color: #555; /* Optional: Adjust text color as needed */
+  color: #555; 
   text-align: left;
 }
 
-/* OCntent */
 
 /* Main Section Styling */
 .main-section {
@@ -403,14 +402,14 @@
   }
 
   .main-heading1 {
-    font-size: 3rem; /* Zmniejszony rozmiar dla mniejszych ekranów */ /* Dostosowanie marginesu, aby wyglądało ładnie */
+    font-size: 3rem; 
     position: relative;
     text-align: left;
   }
 
   .sub-heading {
-    font-size: 1rem; /* Zmniejszony rozmiar dla podtytułu */
-    margin-top: 5px; /* Zmniejszony margines dla lepszego wyglądu */
+    font-size: 1rem; 
+    margin-top: 5px; 
   }
 }
 
@@ -424,12 +423,12 @@
 }
 
 /* Individual Circle Items */
-.circle-item {
+/* .circle-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: calc(20% - 20px); /* Adjust for 5 circles with gap */
-  min-width: 100px; /* Minimum width to ensure wrapping */
+  flex-basis: calc(20% - 20px); 
+  min-width: 100px; 
 }
 
 .circle {
@@ -443,7 +442,7 @@
 .circle-item h2 {
   font-size: 1.2rem;
   margin-top: 0.5rem;
-}
+} */
 
 /* Mobile Responsive Styling */
 @media (max-width: 768px) {
@@ -464,7 +463,7 @@
   }
 
   .circle-item {
-    flex-basis: calc(50% - 20px); /* 2 circles per row on very narrow screens */
+    flex-basis: calc(50% - 20px); 
   }
 }
 
