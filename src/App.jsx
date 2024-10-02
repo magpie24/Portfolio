@@ -240,7 +240,7 @@ function App() {
         <ProjectCard
           imageSrc={onedayatatimeImage}
           title="One Day at a Time"
-          description="A mindfulness project designed to inspire users with daily quotes and ideas for self-care."
+          description="I developed a fully functional website designed to generate a new motivational quote every day. The purpose is to inspire, motivate, and help users stay on track with their goals. It's a simple yet powerful tool for daily encouragement."
           techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://onedayatatime.magdalenapietras.dk/"
           githubLink="https://github.com/magpie24/One-Day-at-a-Time--"
@@ -248,7 +248,7 @@ function App() {
         <ProjectCard
           imageSrc={moveyourbodyImage}
           title="Move Your Body in Koszalin"
-          description=""
+          description="A responsive website that guides users through the hidden sports spots in my hometown, Koszalin. The design is energetic and powerful, ensuring an engaging experience across all devices. It's perfect for locals and visitors alike, helping them discover unique places to stay active and explore the city's athletic side."
           techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
           liveLink="https://move-your-body-in-koszalin.magdalenapietras.dk/index.html?fbclid=IwAR0ZZqjF8nqANCfRXO7L0d2Hqtb6q9oQLkQgDdmNxCHfNhXs_egRBRZtxF4"
           githubLink="https://github.com/magpie24/Koszalin"
@@ -256,7 +256,7 @@ function App() {
         <ProjectCard
           imageSrc={boardgames}
           title="Board Games Search"
-          description="Board Games Search solution for board games cafe in Aarhus."
+          description="A React-based solution that helps users search, filter, and discover games available at a café in Aarhus. The user-friendly interface allows visitors to easily browse through the game collection and quickly find something that matches their interests. This dynamic and efficient tool enhances the gaming experience for café-goers by making the search process simple and intuitive."
           techList={['React', 'GitHub']}
           liveLink="https://magpie24.github.io/BoardGames/"
           githubLink="https://github.com/magpie24/BoardGames"
