@@ -242,7 +242,7 @@ function App() {
           title="One Day at a Time"
           description="I developed a fully functional website designed to generate a new motivational quote every day. The purpose is to inspire, motivate, and help users stay on track with their goals. It's a simple yet powerful tool for daily encouragement."
           techList={['HTML', 'CSS', 'JavaScript', 'Figma']}
-          liveLink="https://onedayatatime.magdalenapietras.dk/"
+          liveLink="https://magpie24.github.io/One-Day-at-a-Time--/"
           githubLink="https://github.com/magpie24/One-Day-at-a-Time--"
         />
         <ProjectCard
