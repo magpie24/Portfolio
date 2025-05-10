@@ -317,7 +317,7 @@ function App() {
         </div>
       </div>
 
-      {/* Footer */}
+      {/* Footer ii */}
 
     <div className="footer">
       <img src={footer}></img>
